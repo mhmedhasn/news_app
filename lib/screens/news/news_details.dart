@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../models/NewsResponse.dart';
+import '../../models/NewsResponse.dart';
 
 class NewsDetails extends StatelessWidget {
   static const String routeName = 'NewsDetails';

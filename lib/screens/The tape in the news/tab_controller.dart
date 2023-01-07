@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:news_c7_fri/models/NewsResponse.dart';
-import 'package:news_c7_fri/screens/tab_item.dart';
+import 'package:news_c7_fri/screens/The%20tape%20in%20the%20news/tab_item.dart';
 import 'package:news_c7_fri/shared/network/remote/api_manager.dart';
-import '../models/SourcesResponse.dart';
-import 'news_item.dart';
+import '../../models/SourcesResponse.dart';
+import '../news/news_item.dart';
 
 class TabControllerScreen extends StatefulWidget {
   List<Sources> sources;
@@ -41,7 +41,7 @@ class _TabControllerScreenState extends State<TabControllerScreen> {
                   .toList(),
             ),
             FutureBuilder<NewsResponse>(
-              future: ApiManager.getNews(widget.sources[selectedIndex].id!),
+              future: ApiManager.getNews(sourceId:widget.sources[selectedIndex].id! ),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return Center(child: CircularProgressIndicator());

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_c7_fri/screens/category_item.dart';
-import 'package:news_c7_fri/screens/tab_controller.dart';
-
 import '../models/SourcesResponse.dart';
 import '../models/category.dart';
 import '../shared/network/remote/api_manager.dart';
+import 'The tape in the news/tab_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   Category category;

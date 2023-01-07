@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_c7_fri/shared/styles/my_theme.dart';
 
-import '../models/category.dart';
+import '../../models/category.dart';
 import 'category_item.dart';
 
 class CategoriesScreen extends StatelessWidget {

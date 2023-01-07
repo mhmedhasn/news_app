@@ -1,19 +1,17 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:news_c7_fri/models/NewsResponse.dart';
-import 'package:news_c7_fri/screens/news_details.dart';
+import 'package:news_c7_fri/screens/news/news_details.dart';
 
 class NewsItem extends StatelessWidget {
 
   Articles News;
   NewsItem(this.News);
-static bool select=false;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         Navigator.pushNamed(context, NewsDetails.routeName,arguments:News );
-        select=true;
       },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
