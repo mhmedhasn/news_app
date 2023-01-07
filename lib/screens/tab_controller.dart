@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:news_c7_fri/models/NewsResponse.dart';
 import 'package:news_c7_fri/screens/tab_item.dart';
 import 'package:news_c7_fri/shared/network/remote/api_manager.dart';
-
 import '../models/SourcesResponse.dart';
 import 'news_item.dart';
 
