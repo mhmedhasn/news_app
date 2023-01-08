@@ -1,14 +1,13 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
-import 'package:news_c7_fri/models/NewsResponse.dart';
-import 'package:news_c7_fri/models/SourcesResponse.dart';
-import 'package:news_c7_fri/shared/components/constants.dart';
+import '../../../models/NewsResponse.dart';
+import '../../../models/SourcesResponse.dart';
+import '../../components/constants.dart';
 
 class ApiManager {
   static Future<SourcesResponse> getSources(String categoryId) async {
-    Uri URL = Uri.https(BASE, '/v2/top-headlines/sources',
+    Uri URL = Uri.https(BASE,'/v2/top-headlines/sources',
         {"apiKey": APIKEY, "category": categoryId});
     Response sources = await http.get(URL);
     try {

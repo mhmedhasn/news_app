@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:news_c7_fri/screens/search/search_screen.dart';
 import '../models/category.dart';
 import '../screens/categories/categories_screen.dart';
 import '../screens/drawer/drawer_widget.dart';
 import '../screens/home_screen.dart';
-
+import '../screens/search/search_screen.dart';
 class HomeLayout extends StatefulWidget {
   static const String routeName = 'HOme';
 

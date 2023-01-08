@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_c7_fri/models/NewsResponse.dart';
 import 'package:news_c7_fri/screens/The%20tape%20in%20the%20news/tab_item.dart';
-import 'package:news_c7_fri/shared/network/remote/api_manager.dart';
+import '../../models/NewsResponse.dart';
 import '../../models/SourcesResponse.dart';
+import '../../shared/network/remote/api_manager.dart';
 import '../news/news_item.dart';
 
 class TabControllerScreen extends StatefulWidget {
